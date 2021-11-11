@@ -1,0 +1,313 @@
+/* Background & Font Part */
+
+html {
+  background-image: url("../Images/background.png");
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  font-family: Verdana, Georgia, Serif;
+}
+
+/* Font Part */
+
+@font-face {
+ font-family: Antonio;
+ src: url('../Fonts/Antonio.ttf');
+}
+
+@font-face {
+ font-family: Lora;
+ src: url('../Fonts/Lora.ttf');
+}
+
+@font-face {
+ font-family: Lora2;
+ src: url('../Fonts/Lora2.ttf');
+}
+
+@font-face {
+ font-family: Loraquote;
+ src: url('../Fonts/Loraquote.ttf');
+}
+
+/* Fixing Logo */
+
+#top img{
+	position: absolute;
+	top: -73px;
+	left: -7px;
+}
+
+#top{
+	position: relative;
+}
+
+/* Navigation Part  */
+
+.topnav {
+  background: #3A3A3A;
+  width: auto;
+  height: 140px;
+}
+.topnav ul {
+  list-style: none;
+  margin: 0;
+  padding-top: 60px;
+  padding-bottom: 5px;
+  line-height: 1;
+  display: block;
+  zoom: 0.80;
+}
+.topnav ul:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.topnav ul li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.topnav ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+  display: block;
+  padding: 15px 25px;
+  font-family: Open Sans, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+  -webkit-transition: color .25s;
+  -moz-transition: color .25s;
+  transition: color .25s;
+}
+.topnav ul li a:hover {
+  color: #ABA555;
+}
+.topnav ul li a:hover:before {
+  width: 100%;
+}
+.topnav ul li a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -3px;
+  top: 19px;
+  height: 6px;
+  width: 6px;
+  background: #FFFFFF;
+  opacity: .5;
+}
+.topnav ul li a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: #ABA555;
+  -webkit-transition: width .50s;
+  -moz-transition: width .50s;
+  transition: width .50s;
+}
+
+/* Homepage Part */
+
+#homepagecontainer{
+  position: relative;
+  text-align: center;
+}
+
+#homepageimage{
+	width: 100%;
+	height: auto;
+}
+
+#homepagetext{
+	font-family: Antonio;
+	color: #FFFFFF;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	font-size: 75px;
+}
+
+/* Main Content Part */
+
+#allbody{
+	width: 1100px;
+	margin: 2rem auto;
+	background-color: #FFFFFF;
+	border: 2px solid #ABA555;
+}
+
+p {
+	font-family: Lora;
+}
+
+.articbody p{
+	font-size: 18px;
+	line-height: 1.5rem;
+	width: 900px;
+	margin: 0 20px 20px;
+}
+
+.articbody img{
+	float: right;
+	padding-right: 15px;
+	padding-bottom: 15px;
+}
+
+h1 {
+	font-family: Antonio;
+	text-align: center;
+	font-size: 40px;
+}
+
+#content h2{
+	border-bottom: 3px solid #3A3A3A;
+	padding-left: 25px;
+
+}
+
+h2 {
+	font-family: Lora2;
+}
+
+blockquote {
+	font-family: Loraquote;
+	width: 900px;
+	margin: 0 auto 20px;
+	font-size: 22px;
+}
+
+#quotebig {
+	font-family: Loraquote;
+	font-size: 55px;
+	text-align: center;
+}
+
+#ata{
+	font-size: 20px;
+	text-align: right;
+	padding-right: 15px;
+}
+
+#signature{
+	float: right;
+	padding-right: 35px;
+	padding-bottom: 25px;
+}
+
+/* Awards and Decoration Part */
+
+.awards ul li{
+	padding-left: 100px;
+	list-style-type: none;
+	font-family: Lora;
+}
+
+.awards img{
+	border: 1px solid #000000;
+}
+
+/* Media Page Part */
+
+#mediaimages{
+    text-align: center;
+    margin: 50px auto;
+}
+
+#mediaimages img{
+	border: 4px groove #693636;
+}
+
+#mediaimages a{
+    margin: 0px 20px;
+    display: inline-block;
+}
+
+#mediavideos video{
+	padding-left: 190px;
+	padding-bottom: 50px;
+}
+
+#mediavideos a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+	padding-bottom: 20px auto;
+	margin-bottom: 10px;
+	border: 3px solid #693636;
+	background-color: #ABA555;
+	font-family: Lora2;
+}
+
+/* Why I chose Ataturk Part */
+
+.oguz{
+	font-family: Loraquote;
+}
+
+/* Links Part */
+
+#websites a {
+text-decoration : none;
+color : #ABA555;
+position : relative;
+transition : all 0.25s linear;
+padding-left: 2px;
+margin-left: 30px;
+}
+
+#websites a:after {
+content : "";
+display : block;
+background : #ABA555;
+height : 2px;
+width : 100%;
+position : absolute;
+left : 0;
+transition : all 0.25s linear;
+}
+
+#websites a:hover, a:focus {
+color : #000000;
+}
+
+#websites a:hover:after, a:focus:after {
+opacity : 1;
+}
+
+/* Footer Part */
+
+footer{
+	background-color:#3A3A3A;
+	height:120px;
+	overflow:hidden;
+	padding-top:10px;
+	position:relative;
+	text-align: center;
+	clear: both;
+}
+
+footer a{
+	text-decoration: none;
+    width: 50px;
+	height: 100px;
+	display: inline-block;
+}
+
+footer p{
+	color: #FFFFFF;
+	font-family: Antonio;
+	font-size: 20px;
+    line-height: 30px;
+}
